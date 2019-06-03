@@ -14,6 +14,9 @@
 
 ## Overview
 
+O Jabiraca é um Framework Css/Js, open source, criado inicialmente como parte de um trabalho de conclcusão de curso quem tem como tema a introdução de novos desenvolvedores ao mundo do Open Source.
+A ideia é manter o código o mais simples possível, para o fácil entendimento de qualquer desenvolvedor, a contribuição também é aberta para qualquer nível de conhecimento.
+
 ## Índice
 
 - [Instalação](#instalação)
@@ -37,7 +40,7 @@ npm install jabiraca-css
 
 ### Normalize
 
-O Jabiraca está usando o [Normalize](https://github.com/necolas/normalize.css) para trabalhar a parte padronização/normalização do html.
+O Jabiraca está usando o [Normalize](https://github.com/necolas/normalize.css) para trabalhar a parte de padronização/normalização do html.
 
 ### Elementos
 
