@@ -34,7 +34,7 @@ npm install jabiraca-css
 
 O Jabiraca está usando o [Normalize](https://github.com/necolas/normalize.css) para trabalhar a parte de padronização/normalização do html.
 
-##BEM
+## BEM
 
 Todo o desenvolvimento do Jabiraca segue utilizando a metodologia de escrita de classes para o css de uma organizada. BEM significa B(_block_), E(_element_) e M(_modifier_), ou seja Bloco, Elemento e Modificador. A estrutra segue da seguinte maneira, todo o elemento pai será nomeado com uma usual, como "card", já o elemento filho, como "card\_\_header", vai ter o "\_\_" identificando que ele é um elemento do bloco "card". Por fim, se formos modificar de alguma forma nosso elemento, no caso o "card\_\_header", devemos repetir a classe com o seu modificador da seguinte forma, "card\*\*header card\_\_header--center", o "--" identifica o modificador da classe, que sempre irá realizar a ação de modificar alguma propriedade que estejá como padrão do elemento.
 
@@ -57,7 +57,7 @@ O BEM foi criado pelo time da Yandex, que é uma companhia de internet que tem s
 - Reutilização de Código
 - Minimização de custo para atualizar o design, criar novos elementos e etc
 
-##Cores
+## Cores
 
 Segue abaixo a tabela que relaciona as cores com as classes que alteram a cor do elemnto.
 
