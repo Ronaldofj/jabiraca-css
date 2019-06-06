@@ -1,14 +1,6 @@
-<h1 align="center">
+<div align="center">
 
 ![](assets/logo.png)
-
-</h1>
-
-<h3 align="center">
-
-</h3>
-
-<div align="center">
 
 </div>
 
@@ -23,10 +15,8 @@ A ideia é manter o código o mais simples possível, para o fácil entendimento
 - [Normalize](#normalize)
 - [Elementos](#elementos)
   - [Button](#button)
-  - [Footer](#footer)
-  - [Modal](#modal)
-  - [Navbar](#navbar)
-- [Media Querys](#media-querys)
+  - [Lista](#lista)
+  - [Alertas](#alertas)
 - [Contribuição](#contribuição)
 - [License](#license)
 
@@ -68,21 +58,101 @@ Há também os botões com estilo outline.
 <button class='button-outline button__danger'></button>
 ```
 
-#### Footer
+Há também os botões que preenche 100% do componente pai.
 
-Em breve.
+```
+<button class='button button__primary button--full-size'>Button</button>
+```
 
-#### Modal
+- [Media Querys](#media-querys)
 
-Em breve.
+Há também os botões que se posicionam a cada lado do componente.
 
-#### Navbar
+```
+<button class='button button__primary button--left'>Button</button>
+<button class='button button__primary button--right'>Button</button>
+```
 
-Em breve.
+Há também os botões com box-shadow.
 
-## Media Querys
+```
+<button class='button button--shadow'>Button</button>
+<button class='button button__primary button--shadow'>Button</button>
+<button class='button button__success button--shadow'>Button</button>
+<button class='button button__error button--shadow'>Button</button>
+<button class='button button__danger button--shadow'>Button</button>
+```
 
-Em breve.
+#### Lista
+
+O Jabiraca apresenta 2 tipos de estilos listas, numeradas ou não-numeradas.
+
+##### Lista não ordenadas
+
+Lista normal sem estilização.
+
+```
+<div class='list-ul'>
+	<p class='list-ul__title'>Linguagens</p>
+	<ul class='list-ul__body'>
+		<li class='list-ul__item'>JavaScript</li>
+		<li class='list-ul__item'>PHP</li>
+		<li class='list-ul__item'>Java</li>
+	</ul>
+</div>
+```
+
+Lista com estilização e componentes centralizados.
+
+```
+<div class='list-ul list-ul--center'>
+	<p class='list-ul__title list-ul__title--primary'>Linguagens</p>
+	<ul class='list-ul__body'>
+		<li class='list-ul__item'>JavaScript</li>
+		<li class='list-ul__item'>PHP</li>
+		<li class='list-ul__item'>Java</li>
+	</ul>
+</div>
+```
+
+##### Lista numeradas
+
+Lista numerada normal sem estilização.
+
+```
+<div class='list-ol'>
+	<p class='list-ol__title'>Linguagens</p>
+	<ol class='list-ol__body'>
+		<li class='list-ol__item'>JavaScript</li>
+		<li class='list-ol__item'>PHP</li>
+		<li class='list-ol__item'>Java</li>
+	</ol>
+</div>
+```
+
+Lista com estilização e componentes centralizados.
+
+```
+<div class='list-ol list-ol--center'>
+	<p class='list-ol__title list-ol__title--primary'>Linguagens</p>
+	<ol class='list-ol__body'>
+		<li class='list-ol__item'>JavaScript</li>
+		<li class='list-ol__item'>PHP</li>
+		<li class='list-ol__item'>Java</li>
+	</ol>
+</div>
+```
+
+#### Alertas
+
+O Jabiraca tem também vários modelos de alertas.
+
+```
+<div class='alert alert__primary'>Alerta!!</div>
+<div class='alert alert__success'>Alerta!!</div>
+<div class='alert alert__error'>Alerta!!</div>
+<div class='alert alert__danger'>Alerta!!</div>
+```
 
 ## Contribuição
 

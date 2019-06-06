@@ -30,8 +30,41 @@
 								align-items: center;
 						}
 
+						.listas {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+						}
+
+						.alertas {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+						}
+
 						.buttons-wrapper {
 								margin: 20px 0;
+								width: 500px;
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+						}
+
+						.listas-wrapper {
+								margin: 20px 0;
+								width: 500px;
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+						}
+
+						.alertas-wrapper {
+								margin: 20px 0;
+								width: 500px;
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+								flex-direction: column;
 						}
 
 						.buttons {
@@ -70,8 +103,112 @@
 												<button class='button-outline button-outline__error'>Button</button>
 												<button class='button-outline button-outline__danger'>Button</button>
 										</div>
+
+										<br/>
+										<h2>Botões Full-Size</h2>
+										<p>botões que preenche 100% do componente pai.</p>
+
+										<div class='buttons-wrapper'>
+												<button class='button button__primary button--full-size'>Button</button>
+										</div>
+
+										<br/>
+										<h2>Botões Left e Right</h2>
+										<p>botões que se posicionam a cada lado do componente.</p>
+
+										<div class='buttons-wrapper'>
+												<button class='button button__primary button--left'>Button</button>
+												<span>Botões ao lado esquerdo.</span>
+										</div>
+
+										<div class='buttons-wrapper'>
+												<span>Botões ao lado direito.</span>
+												<button class='button button__primary button--right'>Button</button>
+										</div>
+
+										<h2>Botões com Shadow</h2>
+										<p>botões com box-shadow.</p>
+
+										<div class='buttons-wrapper'>
+												<button class='button button--shadow'>Button</button>
+												<button class='button button__primary button--shadow'>Button</button>
+												<button class='button button__success button--shadow'>Button</button>
+												<button class='button button__error button--shadow'>Button</button>
+												<button class='button button__danger button--shadow'>Button</button>
+										</div>
 								</div>
 
+								<div class="listas">
+										<br/>
+										<br/>
+										<br/>
+										<h2>Listas não numeradas</h2>
+										<p>listas que não são ordenadas por numeros.</p>
+										<div class='listas-wrapper'>
+												<div class='list-ul'>
+														<p class='list-ul__title'>Linguagens</p>
+														<ul class='list-ul__body'>
+																<li class='list-ul__item'>JavaScript</li>
+																<li class='list-ul__item'>PHP</li>
+																<li class='list-ul__item'>Java</li>
+														</ul>
+												</div>
+										</div>
+
+										<br/>
+										<p>listas com os componentes centralizados e com estilização.</p>
+										<div class='listas-wrapper'>
+												<div class='list-ul list-ul--center'>
+														<p class='list-ul__title list-ul__title--primary'>Linguagens</p>
+														<ul class='list-ul__body'>
+																<li class='list-ul__item'>JavaScript</li>
+																<li class='list-ul__item'>PHP</li>
+																<li class='list-ul__item'>Java</li>
+														</ul>
+												</div>
+										</div>
+
+										<br/>
+										<h2>Listas numeradas</h2>
+										<p>listas que são ordenadas por numeros.</p>
+										<div class='listas-wrapper'>
+												<div class='list-ol'>
+														<p class='list-ol__title'>Linguagens</p>
+														<ol class='list-ol__body'>
+																<li class='list-ol__item'>JavaScript</li>
+																<li class='list-ol__item'>PHP</li>
+																<li class='list-ol__item'>Java</li>
+														</ol>
+												</div>
+										</div>
+
+										<br/>
+										<p>listas com os componentes centralizados e com estilização.</p>
+										<div class='listas-wrapper'>
+												<div class='list-ol list-ol--center'>
+														<p class='list-ol__title list-ol__title--primary'>Linguagens</p>
+														<ol class='list-ol__body'>
+																<li class='list-ol__item'>JavaScript</li>
+																<li class='list-ol__item'>PHP</li>
+																<li class='list-ol__item'>Java</li>
+														</ol>
+												</div>
+										</div>
+								</div>
+
+								<div class='alertas'>
+										<br/>
+										<br/>
+										<br/>
+										<h2>Alertas</h2>
+										<p>Alertas que podem ser utilizadas em respostas diversas.</p>
+										<div class='alertas-wrapper'>
+												<div class='alert alert__primary'>Alerta!!</div>
+												<div class='alert alert__success'>Alerta!!</div>
+												<div class='alert alert__error'>Alerta!!</div>
+												<div class='alert alert__danger'>Alerta!!</div>
+										</div>
+								</div>
 						</div>
 				</div>
 		</body>
