@@ -32,11 +32,11 @@ npm install jabiraca-css
 
 O Jabiraca está usando o [Normalize](https://github.com/necolas/normalize.css) para trabalhar a parte de padronização/normalização do html.
 
-### Elementos
+## Elementos
 
 Até o momento o Jabirca conta com apenas 4 Elementos, button, footer, navbar e modal.
 
-#### Button
+### Button
 
 O Jabiraca apresenta alguns tipos de estilos botões pré-desenvolvidos para o uso, cada qual com sua necessidade.
 
@@ -64,8 +64,6 @@ Há também os botões que preenche 100% do componente pai.
 <button class='button button__primary button--full-size'>Button</button>
 ```
 
-- [Media Querys](#media-querys)
-
 Há também os botões que se posicionam a cada lado do componente.
 
 ```
@@ -83,11 +81,11 @@ Há também os botões com box-shadow.
 <button class='button button__danger button--shadow'>Button</button>
 ```
 
-#### Lista
+### Lista
 
-O Jabiraca apresenta 2 tipos de estilos listas, numeradas ou não-numeradas.
+O Jabiraca apresenta 2 tipos de layout de listas, numeradas ou não numeradas.
 
-##### Lista não ordenadas
+#### Lista não numeradas
 
 Lista normal sem estilização.
 
@@ -115,7 +113,7 @@ Lista com estilização e componentes centralizados.
 </div>
 ```
 
-##### Lista numeradas
+#### Lista numeradas
 
 Lista numerada normal sem estilização.
 
@@ -143,7 +141,7 @@ Lista com estilização e componentes centralizados.
 </div>
 ```
 
-#### Alertas
+### Alertas
 
 O Jabiraca tem também vários modelos de alertas.
 
@@ -156,7 +154,7 @@ O Jabiraca tem também vários modelos de alertas.
 
 ## Contribuição
 
-Em breve.
+A contribuição é distribuição do conteúdo do framework segue todas as normas impostas pelo GitHub e pela Licença do projeto.
 
 ## License
 
