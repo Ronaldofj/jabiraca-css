@@ -20,7 +20,7 @@
 		margin-right: auto;
 	}
 
-	&__primary {
+	&--primary {
 		color: #fff;
 		background-color: #5082ec;
 		transition: all 0.2s;
@@ -30,7 +30,7 @@
 		}
 	}
 
-	&__success {
+	&--success {
 		color: #fff;
 		background-color: #57ff5f;
 		transition: all 0.2s;
@@ -40,7 +40,7 @@
 		}
 	}
 
-	&__error {
+	&--error {
 		color: #fff;
 		background-color: #ff2119;
 		transition: all 0.2s;
@@ -50,7 +50,7 @@
 		}
 	}
 
-	&__danger {
+	&--danger {
 		color: #fff;
 		background-color: #ff7221;
 		transition: all 0.2s;
@@ -84,7 +84,7 @@
 		margin-right: auto;
 	}
 
-	&__primary {
+	&--primary {
 		color: #4570cc;
 		border: 1px solid #4570cc;
 		transition: all 0.2s;
@@ -95,7 +95,7 @@
 		}
 	}
 
-	&__success {
+	&--success {
 		color: #45cc4c;
 		border: 1px solid #45cc4c;
 		transition: all 0.2s;
@@ -106,7 +106,7 @@
 		}
 	}
 
-	&__error {
+	&--error {
 		color: #dd1c16;
 		border: 1px solid #dd1c16;
 		transition: all 0.2s;
@@ -117,7 +117,7 @@
 		}
 	}
 
-	&__danger {
+	&--danger {
 		color: #ff7221;
 		border: 1px solid #ff7221;
 		transition: all 0.2s;

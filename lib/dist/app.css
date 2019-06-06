@@ -16,36 +16,36 @@
 .button--left {
   margin-right: auto;
 }
-.button__primary {
+.button--primary {
   color: #fff;
   background-color: #5082ec;
   transition: all 0.2s;
 }
-.button__primary:hover {
+.button--primary:hover {
   background-color: #4570cc;
 }
-.button__success {
+.button--success {
   color: #fff;
   background-color: #57ff5f;
   transition: all 0.2s;
 }
-.button__success:hover {
+.button--success:hover {
   background-color: #45cc4c;
 }
-.button__error {
+.button--error {
   color: #fff;
   background-color: #ff2119;
   transition: all 0.2s;
 }
-.button__error:hover {
+.button--error:hover {
   background-color: #dd1c16;
 }
-.button__danger {
+.button--danger {
   color: #fff;
   background-color: #ff7221;
   transition: all 0.2s;
 }
-.button__danger:hover {
+.button--danger:hover {
   background-color: #ff4600;
 }
 
@@ -68,39 +68,39 @@
 .button-outline--right {
   margin-right: auto;
 }
-.button-outline__primary {
+.button-outline--primary {
   color: #4570cc;
   border: 1px solid #4570cc;
   transition: all 0.2s;
 }
-.button-outline__primary:hover {
+.button-outline--primary:hover {
   background-color: #4570cc;
   color: #fff;
 }
-.button-outline__success {
+.button-outline--success {
   color: #45cc4c;
   border: 1px solid #45cc4c;
   transition: all 0.2s;
 }
-.button-outline__success:hover {
+.button-outline--success:hover {
   background-color: #45cc4c;
   color: #fff;
 }
-.button-outline__error {
+.button-outline--error {
   color: #dd1c16;
   border: 1px solid #dd1c16;
   transition: all 0.2s;
 }
-.button-outline__error:hover {
+.button-outline--error:hover {
   color: #fff;
   background-color: #dd1c16;
 }
-.button-outline__danger {
+.button-outline--danger {
   color: #ff7221;
   border: 1px solid #ff7221;
   transition: all 0.2s;
 }
-.button-outline__danger:hover {
+.button-outline--danger:hover {
   color: #fff;
   background-color: #ff7221;
 }
@@ -124,7 +124,7 @@
   color: #fff;
   background-color: #5082ec;
 }
-.list-ul__title--secondary {
+.list-ul__title--success {
   color: #fff;
   background-color: #57ff5f;
 }
@@ -162,7 +162,7 @@
   color: #fff;
   background-color: #5082ec;
 }
-.list-ol__title--secondary {
+.list-ol__title--success {
   color: #fff;
   background-color: #57ff5f;
 }
@@ -193,29 +193,29 @@
   padding: 10px;
   margin-bottom: 10px;
 }
-.alert__primary {
+.alert--primary {
   border-radius: 5px;
   color: #4570cc;
   border: 1px solid #4570cc;
-  background-color: rgba(69, 112, 204, 0.5);
+  background-color: rgba(69, 112, 204, 0.3);
 }
-.alert__success {
+.alert--success {
   border-radius: 5px;
   color: #45cc4c;
   border: 1px solid #45cc4c;
-  background-color: rgba(69, 204, 76, 0.5);
+  background-color: rgba(69, 204, 76, 0.3);
 }
-.alert__error {
+.alert--error {
   border-radius: 5px;
   color: #dd1c16;
   border: 1px solid #dd1c16;
-  background-color: rgba(221, 28, 22, 0.5);
+  background-color: rgba(221, 28, 22, 0.3);
 }
-.alert__danger {
+.alert--danger {
   border-radius: 5px;
   color: #ff7221;
   border: 1px solid #ff7221;
-  background-color: rgba(255, 114, 33, 0.5);
+  background-color: rgba(255, 114, 33, 0.3);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

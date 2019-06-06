@@ -13,9 +13,11 @@ A ideia é manter o código o mais simples possível, para o fácil entendimento
 
 - [Instalação](#instalação)
 - [Normalize](#normalize)
+- [BEM](#bem)
+- [Cores](#cores)
 - [Elementos](#elementos)
   - [Button](#button)
-  - [Lista](#lista)
+  - [Listas](#listas)
   - [Alertas](#alertas)
 - [Contribuição](#contribuição)
 - [License](#license)
@@ -32,64 +34,112 @@ npm install jabiraca-css
 
 O Jabiraca está usando o [Normalize](https://github.com/necolas/normalize.css) para trabalhar a parte de padronização/normalização do html.
 
+##BEM
+
+Todo o desenvolvimento do Jabiraca segue utilizando a metodologia de escrita de classes para o css de uma organizada. BEM significa B(_block_), E(_element_) e M(_modifier_), ou seja Bloco, Elemento e Modificador. A estrutra segue da seguinte maneira, todo o elemento pai será nomeado com uma usual, como "card", já o elemento filho, como "card\_\_header", vai ter o "\_\_" identificando que ele é um elemento do bloco "card". Por fim, se formos modificar de alguma forma nosso elemento, no caso o "card\_\_header", devemos repetir a classe com o seu modificador da seguinte forma, "card\*\*header card\_\_header--center", o "--" identifica o modificador da classe, que sempre irá realizar a ação de modificar alguma propriedade que estejá como padrão do elemento.
+
+Exemplo de Código:
+
+```
+<div class='card'>
+	<div class='card__header card__header--center>
+		//...html
+	</div>
+	<div class='card__body card__body--center>
+		//...html
+	</div>
+</div>
+```
+
+O BEM foi criado pelo time da Yandex, que é uma companhia de internet que tem sede da Russia, e que é um tipo de Google Russo. Segundo a Yandex as vantagens do BEM são:
+
+- Facíl suporte a estrura do seu projeto à medida em que ele cresce
+- Reutilização de Código
+- Minimização de custo para atualizar o design, criar novos elementos e etc
+
+##Cores
+
+Segue abaixo a tabela que relaciona as cores com as classes que alteram a cor do elemnto.
+
+| Classe Css | Cor (HEX) |
+| ---------- | --------- |
+| primary    | #5082ec   |
+| success    | #57ff5f   |
+| error      | #ff2119   |
+| danger     | #ff7221   |
+
 ## Elementos
 
-Até o momento o Jabirca conta com apenas 4 Elementos, button, footer, navbar e modal.
+O Jabiraca conta com diversos elementos para ajudar no desenvolvimento do seu projeto.
+Lembre-se, esse projeto não é perfeito e a sua sugestão é sempre bem vinda. =)
 
 ### Button
 
-O Jabiraca apresenta alguns tipos de estilos botões pré-desenvolvidos para o uso, cada qual com sua necessidade.
+Há alguns tipos de botões com estilos pré-definidos para o uso instantâneo:
+
+#### Botão padrão
+
+Estilo padrão dos botões, apenas com as cores e um _hover_ bem sutil:
 
 ```
 <button class='button'></button>
-<button class='button button__primary'></button>
-<button class='button button__successs'></button>
-<button class='button button__error'></button>
-<button class='button button__danger'></button>
+<button class='button button--primary'></button>
+<button class='button button--successs'></button>
+<button class='button button--error'></button>
+<button class='button button--danger'></button>
 ```
 
-Há também os botões com estilo outline.
+#### Botão outline
+
+Estilo com fundo sem cor, e com bordas coloridas, _hover_ preenchendo o botão com a mesma cor da borda:
 
 ```
 <button class='button-outline'></button>
-<button class='button-outline button__primary'></button>
-<button class='button-outline button__successs'></button>
-<button class='button-outline button__error'></button>
-<button class='button-outline button__danger'></button>
+<button class='button-outline button--primary'></button>
+<button class='button-outline button--successs'></button>
+<button class='button-outline button--error'></button>
+<button class='button-outline button--danger'></button>
 ```
 
-Há também os botões que preenche 100% do componente pai.
+#### Modificadores auxiliares dos botões
+
+Preenchendo 100% do componente em que o botão foi inserido:
 
 ```
-<button class='button button__primary button--full-size'>Button</button>
+<button class='button button--primary button--full-size'>Button</button>
 ```
 
 Há também os botões que se posicionam a cada lado do componente.
 
 ```
-<button class='button button__primary button--left'>Button</button>
-<button class='button button__primary button--right'>Button</button>
+
+<button class='button button--primary button--left'>Button</button>
+<button class='button button--primary button--right'>Button</button>
+
 ```
 
 Há também os botões com box-shadow.
 
 ```
+
 <button class='button button--shadow'>Button</button>
-<button class='button button__primary button--shadow'>Button</button>
-<button class='button button__success button--shadow'>Button</button>
-<button class='button button__error button--shadow'>Button</button>
-<button class='button button__danger button--shadow'>Button</button>
+<button class='button button--primary button--shadow'>Button</button>
+<button class='button button--success button--shadow'>Button</button>
+<button class='button button--error button--shadow'>Button</button>
+<button class='button button--danger button--shadow'>Button</button>
+
 ```
 
-### Lista
+### Listas
 
 O Jabiraca apresenta 2 tipos de layout de listas, numeradas ou não numeradas.
 
-#### Lista não numeradas
+#### Listas não numeradas
 
 Lista normal sem estilização.
 
 ```
+
 <div class='list-ul'>
 	<p class='list-ul__title'>Linguagens</p>
 	<ul class='list-ul__body'>
@@ -113,7 +163,7 @@ Lista com estilização e componentes centralizados.
 </div>
 ```
 
-#### Lista numeradas
+#### Listas numeradas
 
 Lista numerada normal sem estilização.
 
@@ -146,10 +196,10 @@ Lista com estilização e componentes centralizados.
 O Jabiraca tem também vários modelos de alertas.
 
 ```
-<div class='alert alert__primary'>Alerta!!</div>
-<div class='alert alert__success'>Alerta!!</div>
-<div class='alert alert__error'>Alerta!!</div>
-<div class='alert alert__danger'>Alerta!!</div>
+<div class='alert alert--primary'>Alerta!!</div>
+<div class='alert alert--success'>Alerta!!</div>
+<div class='alert alert--error'>Alerta!!</div>
+<div class='alert alert--danger'>Alerta!!</div>
 ```
 
 ## Contribuição

@@ -3,31 +3,31 @@
 	padding: 10px;
 	margin-bottom: 10px;
 
-	&__primary {
+	&--primary {
 		border-radius: 5px;
 		color: #4570cc;
 		border: 1px solid #4570cc;
-		background-color: rgba(#4570cc, 0.5);
+		background-color: rgba(#4570cc, 0.3);
 	}
 
-	&__success {
+	&--success {
 		border-radius: 5px;
 		color: #45cc4c;
 		border: 1px solid #45cc4c;
-		background-color: rgba(#45cc4c, 0.5);
+		background-color: rgba(#45cc4c, 0.3);
 	}
 
-	&__error {
+	&--error {
 		border-radius: 5px;
 		color: #dd1c16;
 		border: 1px solid #dd1c16;
-		background-color: rgba(#dd1c16, 0.5);
+		background-color: rgba(#dd1c16, 0.3);
 	}
 
-	&__danger {
+	&--danger {
 		border-radius: 5px;
 		color: #ff7221;
 		border: 1px solid #ff7221;
-		background-color: rgba(#ff7221, 0.5);
+		background-color: rgba(#ff7221, 0.3);
 	}
 }
