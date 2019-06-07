@@ -19,6 +19,7 @@ A ideia é manter o código o mais simples possível, para o fácil entendimento
   - [Button](#button)
   - [Listas](#listas)
   - [Alertas](#alertas)
+  - [Cards](#cards)
 - [Contribuição](#contribuição)
 - [License](#license)
 
@@ -202,9 +203,38 @@ O Jabiraca tem também vários modelos de alertas.
 <div class='alert alert--danger'>Alerta!!</div>
 ```
 
-## Contribuição
+Há também os alertas com um pouco mais de informação.
 
-A contribuição é distribuição do conteúdo do framework segue todas as normas impostas pelo GitHub e pela Licença do projeto.
+```
+<div class='alert alert--primary'>
+	<div class='alert__header'>
+		Alerta!!
+	</div>
+	<div class='alert__body'>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est dolore culpa odit? Alias, corrupti. Iure, eveniet? Ipsam dolor aliquam incidunt sed explicabo rerum necessitatibus!
+	</div>
+</div>
+```
+
+### Cards
+
+Há também os cards, há dois modifcadores com tamanhos pré definidos, "card--medium", que tem o width setado em "500px" e o "card-tiny", que tem o width setado em "300px"
+
+```
+<div class="card">
+	<div class="card__header">
+		Card Teste
+	</div>
+	<div class="card__body">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae enim eius explicabo, impedit quisquam illum recusandae ipsa, veritatis eum tenetur minus vero ipsum quidem? Vel!
+	</div>
+	<div class="card__footer">
+		<button class='button button--primary'>Ok</button>
+	</div>
+</div>
+```
+
+## Contribuição
 
 ## License
 
