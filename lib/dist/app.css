@@ -3,6 +3,7 @@
   border-radius: 5px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .button--shadow {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -190,8 +191,17 @@
 
 .alert {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
+}
+.alert__header {
+  padding: 0 0 10px 0;
+  border-bottom: 0.5px solid;
+  font-weight: bold;
+}
+.alert__body {
+  margin-top: 10px;
+  padding: 0;
 }
 .alert--primary {
   border-radius: 5px;
@@ -216,6 +226,43 @@
   color: #ff7221;
   border: 1px solid #ff7221;
   background-color: rgba(255, 114, 33, 0.3);
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.card--full-size {
+  width: 100%;
+}
+.card--medium {
+  width: 500px;
+}
+@media (max-width: 500px) {
+  .card--medium {
+    width: 100%;
+  }
+}
+.card--tiny {
+  width: 300px;
+}
+@media (max-width: 300px) {
+  .card--tiny {
+    width: 100%;
+  }
+}
+.card__header {
+  padding: 0 0 20px 0;
+  border-bottom: 0.5px solid lightgray;
+  font-weight: bold;
+}
+.card__body {
+  margin: 20px 0;
+  padding: 0;
+}
+.card__footer {
+  margin-top: 20px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
